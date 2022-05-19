@@ -1,0 +1,43 @@
+body{
+   color: red;
+   background-color: black;
+}
+
+
+/* main */
+.container-fluid{
+  margin: 20px;
+}
+
+
+/* Search filter */
+input{
+    width: 120%;
+    color: white;
+}
+
+/* movie box main */
+.main{
+    height: 120vh;
+    margin-top: 50px;
+    background-size: cover;
+    background-color: white;
+    background-blend-mode: darken;
+    border-radius: 40px;
+    padding: 2%;
+    margin-bottom: 50px;
+}
+
+
+/* movie box Scroll */
+#row-body::-webkit-scrollbar{
+    display: none;
+
+}
+#row-body {
+    
+    scrollbar-width: none;
+    height: 90%;
+    overflow-y: auto;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+ <! –– Materialize ––>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+ <! –– Icons ––>
+
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+<! –– CSS ––>
+<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+   
+<! –– Main Body ––>
+<div class="container-fluid ">
+
+    <! –– Heading ––>
+  <div>
+    <h3 class="center-align  ">Search Movies</h3>
+    <p class="center-align k ">Page Developed by Ritesh Gorle</p>
+  </div>
+   
+    <! –– Movie Search and Info ––>
+    <div class="main">
+
+        <! ––  Search filter and button ––>
+        <div class="row">
+            <div class="col s10 m10">
+                <input  type="text" name=""  placeholder="Search" id="movie_search">
+            </div>
+            <div class="col s2 m2">
+                <button class="btn" id="button" onclick="fetchName()" > Search</button>
+            </div>
+        </div>
+
+        <! –– Loding or Preloader ––>
+
+        <div class="row" id="row-body">
+            <div class="col s12 valign center" id="lds-roller">
+                <div class="progress">
+      <div class="indeterminate" ></div>
+      </div>  <strong> <h4>Loading</h4> <div class="preloader-wrapper small active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</strong> <br>
+       
+
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+<! –– Javascript ––>
+<script type="text/javascript" src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
